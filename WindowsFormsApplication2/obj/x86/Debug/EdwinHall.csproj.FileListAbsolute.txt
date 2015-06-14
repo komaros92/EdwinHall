@@ -11,3 +11,10 @@ D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86
 C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csproj.ResolveComReference.cache
 C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
 C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csprojResolveAssemblyReference.cache
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.EdwinHallC.resources
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Ustawienia.resources
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csproj.GenerateResource.Cache
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Koft\Documents\EdwinHall\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb

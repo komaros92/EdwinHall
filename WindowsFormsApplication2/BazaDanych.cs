@@ -15,7 +15,7 @@ namespace WindowsFormsApplication2
         OleDbConnection uchwyt;
         OleDbDataAdapter daBaza;
         OleDbCommand com;
-        DataSet dsAccess = new DataSet("Access");
+        public DataSet dsAccess = new DataSet("Access");
         public OpenFileDialog okienko = new OpenFileDialog();
 
         public BazaDanych()
@@ -43,7 +43,7 @@ namespace WindowsFormsApplication2
         }
         ~BazaDanych()
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
     }
 }

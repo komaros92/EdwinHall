@@ -1,0 +1,10 @@
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csproj.ResolveComReference.cache
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csproj.GenerateResource.Cache
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.csprojResolveAssemblyReference.cache
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\EdwinHall.EdwinHallC.resources
+D:\Studia\Semestr 6\PO\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Ustawienia.resources

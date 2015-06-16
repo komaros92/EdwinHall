@@ -31,9 +31,10 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.toolStripComboBox_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_WskazBaze = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +44,6 @@
             this.ToolStripMenuItem_EksportujWykres = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_EksportujTabele = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Pomiar = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Pomiar_Nowy = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -59,7 +59,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.odświeżWykresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -115,14 +115,13 @@
             // zPlikuToolStripMenuItem
             // 
             this.zPlikuToolStripMenuItem.Name = "zPlikuToolStripMenuItem";
-            this.zPlikuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zPlikuToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.zPlikuToolStripMenuItem.Text = "Baza lokalna...";
-            this.zPlikuToolStripMenuItem.Click += new System.EventHandler(this.zPlikuToolStripMenuItem_Click);
             // 
             // naSerwerzeToolStripMenuItem
             // 
             this.naSerwerzeToolStripMenuItem.Name = "naSerwerzeToolStripMenuItem";
-            this.naSerwerzeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.naSerwerzeToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.naSerwerzeToolStripMenuItem.Text = "Na serwerze...";
             this.naSerwerzeToolStripMenuItem.Visible = false;
             // 
@@ -138,26 +137,19 @@
             // ToolStripMenuItem_EksportujWykres
             // 
             this.ToolStripMenuItem_EksportujWykres.Name = "ToolStripMenuItem_EksportujWykres";
-            this.ToolStripMenuItem_EksportujWykres.Size = new System.Drawing.Size(112, 22);
+            this.ToolStripMenuItem_EksportujWykres.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_EksportujWykres.Text = "Wykres";
             // 
             // ToolStripMenuItem_EksportujTabele
             // 
             this.ToolStripMenuItem_EksportujTabele.Name = "ToolStripMenuItem_EksportujTabele";
-            this.ToolStripMenuItem_EksportujTabele.Size = new System.Drawing.Size(112, 22);
+            this.ToolStripMenuItem_EksportujTabele.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_EksportujTabele.Text = "Tabela";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // ustawieniaToolStripMenuItem
-            // 
-            this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ustawieniaToolStripMenuItem.Text = "Ustawienia...";
-            this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click_1);
             // 
             // ToolStripMenuItem_Pomiar
             // 
@@ -171,20 +163,18 @@
             // ToolStripMenuItem_Pomiar_Nowy
             // 
             this.ToolStripMenuItem_Pomiar_Nowy.Name = "ToolStripMenuItem_Pomiar_Nowy";
-            this.ToolStripMenuItem_Pomiar_Nowy.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_Pomiar_Nowy.Size = new System.Drawing.Size(114, 22);
             this.ToolStripMenuItem_Pomiar_Nowy.Text = "Nowy...";
             this.ToolStripMenuItem_Pomiar_Nowy.Click += new System.EventHandler(this.ToolStripMenuItem_Pomiar_Nowy_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(111, 6);
             this.toolStripSeparator2.Visible = false;
             // 
             // ToolStripMenuItem_Widok
             // 
-            this.ToolStripMenuItem_Widok.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.odświeżWykresToolStripMenuItem});
             this.ToolStripMenuItem_Widok.Name = "ToolStripMenuItem_Widok";
             this.ToolStripMenuItem_Widok.Size = new System.Drawing.Size(53, 19);
             this.ToolStripMenuItem_Widok.Text = "Widok";
@@ -193,8 +183,6 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -205,6 +193,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -216,6 +205,7 @@
             this.ID.Frozen = true;
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.ID.Visible = false;
             this.ID.Width = 5;
@@ -225,6 +215,7 @@
             this.Temp.Frozen = true;
             this.Temp.HeaderText = "Temp";
             this.Temp.Name = "Temp";
+            this.Temp.ReadOnly = true;
             this.Temp.Width = 40;
             // 
             // Konc
@@ -232,6 +223,7 @@
             this.Konc.Frozen = true;
             this.Konc.HeaderText = "Konc";
             this.Konc.Name = "Konc";
+            this.Konc.ReadOnly = true;
             this.Konc.Width = 60;
             // 
             // Ruch
@@ -239,6 +231,7 @@
             this.Ruch.Frozen = true;
             this.Ruch.HeaderText = "Ruch";
             this.Ruch.Name = "Ruch";
+            this.Ruch.ReadOnly = true;
             this.Ruch.Width = 60;
             // 
             // splitContainer1
@@ -305,10 +298,13 @@
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Tabela1";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
             this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(462, 232);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -322,10 +318,10 @@
             this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(0, 0);
             this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(462, 228);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
@@ -339,12 +335,12 @@
             this.checkedListBox1.Size = new System.Drawing.Size(116, 464);
             this.checkedListBox1.TabIndex = 0;
             // 
-            // odświeżWykresToolStripMenuItem
+            // ustawieniaToolStripMenuItem
             // 
-            this.odświeżWykresToolStripMenuItem.Name = "odświeżWykresToolStripMenuItem";
-            this.odświeżWykresToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.odświeżWykresToolStripMenuItem.Text = "Odśwież wykres";
-            this.odświeżWykresToolStripMenuItem.Click += new System.EventHandler(this.odświeżWykresToolStripMenuItem_Click);
+            this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ustawieniaToolStripMenuItem.Text = "Ustawienia...";
+            this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click_1);
             // 
             // EdwinHallC
             // 
@@ -406,7 +402,6 @@
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.ToolStripMenuItem ustawieniaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem odświeżWykresToolStripMenuItem;
        
     }
 }

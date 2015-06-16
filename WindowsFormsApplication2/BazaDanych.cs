@@ -15,7 +15,7 @@ namespace WindowsFormsApplication2
         OleDbConnection uchwyt;
         OleDbDataAdapter daBaza;
         OleDbCommand com;
-        public DataSet dsAccess = new DataSet("Access");
+        DataSet dsAccess = new DataSet();
         public OpenFileDialog okienko = new OpenFileDialog();
 
         public BazaDanych()
@@ -28,22 +28,9 @@ namespace WindowsFormsApplication2
             uchwyt.Open();
         }
 
-        public void Zapisz(string temp, string prad )
-        {
-            com = new OleDbCommand("INSERT INTO Tabela1(Temperatura,Prond) VALUES (@Temperatura,@Prond)", uchwyt);
-            com.Parameters.Add(new OleDbParameter("@Temperatura", temp));
-            com.Parameters.Add(new OleDbParameter("@Prond", prad));
-            com.ExecuteNonQuery();
-        }
-
-        public void Wczytaj()
-        {
-            daBaza = new OleDbDataAdapter("SELECT * FROM Tabela1", uchwyt);
-            daBaza.Fill(dsAccess);
-        }
         ~BazaDanych()
         {
-            //throw new System.NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
